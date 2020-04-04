@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/images/icon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    <title>Ajar</title>
+    <style>
+      /* colors */
+      .jade {color: #92D3BB;}
+      .emerald {color: #009193;}
+      .midnight {color: #02567D;}
+      .aqua {color: #BAE5E4;}
+      .theme {color: #E84733;}
+
+      /* fonts */
+      .serif {font-family: "Times New Roman", Times, serif;}
+      .sansserif {font-family: 'Lato', sans-serif;}
+
+      /* main */
+      body {background-color: #FAFAFA;}
+      .container {margin-top: 30px; width: 70%;}
+
+      /* left column */
+      .left {padding-right: 30px;}
+
+      .preview {
+        width: 280px;
+        display: inline-block; 
+      }
+
+      #video {
+        position: absolute;
+        left: 40px;
+        top: 71px;
+      }
+
+      /* right column */
+      .right {padding-top: 20px;}
+      .title {margin-left: 0;}
+      .brandname {font-weight: 700;}
+      .tagline {font-style: italic; padding-left: 0px;}
+
+      .features {
+        list-style-type: none; 
+        padding-left: 0; 
+        margin-top: 20px;
+      }
+      .features > li {margin-top: 10px; color:grey; font-size:16px;}
+      .features > li > i {margin-right:3px;} 
+
+      .review {margin: 30px 0;}
+      .quote-left {margin-right: 7px;}
+      .quote-right {margin-left: 7px;}
+
+      .footer {text-align:right; font-size:.8rem; padding-right:0; margin-top:40px; margin-bottom: 20px;}
+      .footer-link {color: #6c757d;}
+      .copyright, .contact {margin-right: 10px;}
+
+      /* banner */
+      .banner {
+        background: rgba(232, 71, 51, 0.9);
+        color: white;
+        padding: 5px;
+      }
+
+      .banner-info p {
+        margin: 0;
+      }
+
+      .banner-instructions {
+        font-size: 14px;
+      }
+
+      .btn-get {
+        color: white;
+        border-color: white;
+        width: 55px;
+        padding-top: 3px;
+        padding-bottom: 3px
+      }
+
+      .btn-get:hover {
+        background-color: white;
+        border-color: white;
+        color: rgba(232, 71, 51, 0.9);
+      }
+
+      /* For screens < landscape tablets */
+      @media only screen and (max-width: 768px) {
+	      .container {
+		      width: 100%;
+          margin-top: 0;
+	      }
+        .banner {
+          padding: 7px 10px;
+        }
+	      .left {
+		      text-align: center;
+          margin-top: 10px;
+	      }
+	      .right {
+		      padding: 20px;
+	      }
+      }
+
+    </style>
+	  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162772941-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-162772941-1');
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <!-- banner -->
+      <div class="d-md-none row banner align-items-center">
+        <div class="col-10 banner-info">
+          <p><strong>Ajar</strong></p>
+          <p class="banner-instructions">Download it for free on the App Store.</p>
+        </div>
+        <div class="col-2">
+          <a href="https://apps.apple.com/us/app/ajar-pulse-of-your-home/id1505427805" class="btn btn-outline-primary btn-get float-right" role="button" aria-pressed="true">GET</a>
+        </div>        
+      </div>
+
+      <!-- main -->
+      <div class="row justify-content-center">
+        <!-- left column  -->       
+        <div class="col-auto left">
+          <div class="preview" id="">
+            <img src="assets/images/iphone8-grey.png" alt="iPhone" width="280" id="device">
+            <video width="230" id="video" controls autoplay muted>
+              <source src="assets/videos/preview-en-5.5.mp4" type="video/mp4">
+              Your browser does not support the video format. Please find Ajar on the App Store.
+            </video>
+          </div>
+        </div>
+
+        <!-- right column -->
+        <div class="col right">
+          <div class="title">
+            <h1 class="sansserif brandname">Ajar</h1>
+            <h3 class="serif tagline">Pulse of Your Home</h3>
+          </div>
+
+          <ul class="sansserif features">      
+            <li><i class="fas fa-lg fa-check-square jade"></i> Manage all your groceries and household supplies in one app.</li>
+            <li><i class="fas fa-lg fa-check-square emerald"></i> Easy flow between your Shopping List and Home List.</li>
+            <li><i class="fas fa-lg fa-check-square aqua"></i> Change quantities with a simple swipe.</li>
+            <li><i class="fas fa-lg fa-check-square midnight"></i> Pinch to see everything at a glance.</li>
+            <li><i class="fas fa-lg fa-check-square jade"></i> Smart Assistance adapts to your preferences.</li>
+            <li><i class="fas fa-lg fa-check-square emerald"></i> Ajar is simple, smart and fun. Also, it's free!</li>
+          </ul>
+
+          <blockquote class="review">
+            <p class="serif"><i class="fas fa-lg fa-quote-left theme quote-left"></i>I always had trouble keeping track of my grocery inventory and often had to throw away expired food in the dark corners of my pantry and fridge. Ajar was a life changer, now I can confidently manage everything in my home. Any veggies about to lose their freshness? Check Ajar. Used up the last few eggs? Log it with Ajar. Shopping groceries? Check off items on the go. A must-have!<i class="fas fa-lg fa-quote-right theme quote-right"></i></p>
+          </blockquote>
+
+          <div class="download float-right">
+            <a href="https://apps.apple.com/us/app/ajar-pulse-of-your-home/id1505427805"><img src="assets/images/download.png" alt="Download Ajar" height="40px"></a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- footer -->
+      <div class="footer col-11 sansserif">
+        <span class="copyright text-muted">© 2020 Ajar</span>
+        <span class="contact text-muted">contact@getajar.com</span>
+        <span class="privacy text-muted"><a href="https://apps.apple.com/us/app/ajar-pulse-of-your-home/id1505427805/privacy" class="footer-link">Privacy</a></span>
+      </div>
+
+    </div>
+  </body>
+</html>
